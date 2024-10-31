@@ -1,25 +1,23 @@
-function criaCartao (categoria, pergunta, resposta){
-    let container = document.getElementById('container');
-    let cartao = document.createElement('article');
-    cartao.className = 'cartao';
-    cartao.innerHTML = `
-    <div class="conteudo-cartao">
-    <h3>${categoria}</h3>
-    <div class="pergunta-cartao">
-            <p>${pergunta}</p>
-        </div>
-        <div class="resposta-cartao">
-            <p>${resposta}</p>
-        </div>
-    </div>
-         `
-         let respostaEstaVisivel = false;
-    
-         function viraCartao(){
-            respostaEstaVisivel = !respostaEstaVisivel;
-            cartao.classList.toggle('active', respostaEstaVisivel);
-         }
-         cartao.addEventListener('click', viraCartao);
-         
-         container.appendChild(cartao);
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="ll.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">pagina 1</a>
+        <a href="pagina2.html">pagina 2</a>
+    </header>
+    <section id="container">
+
+    </section>
+    <footer>
+        <p>Desenvolvido pelas alunas: Lívia e Lais</p>
+    </footer>
+    <script src="pagina2.js"></script>
+    <script src="perguntas.js"></script>
+</body>
+</html>
