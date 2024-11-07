@@ -19,7 +19,7 @@ header{
     justify-content: space-around;
 }
 
-header a {
+header{
     color: var(--branco);
 }
 
